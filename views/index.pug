@@ -62,9 +62,9 @@ html(lang="en")
 		pony-town-app
 			#loading
 				img(src=loadingImage alt="")
-				div Loading
+				div Завантаження
 				p.loading-error
-					| Could not load the game, #[a.loading-error-btn(href="/reset.html") reload] to continue.
+					| Не вдалося завантажити гру, #[a.loading-error-btn(href="/reset.html") перезавантажте] щоб продовжити.
 
 		if oauthProviders
 			script#oauth-providers(type="application/json")!=JSON.stringify(oauthProviders)
