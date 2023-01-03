@@ -8,11 +8,11 @@
 		fa-icon.resize-icon([icon]="resizeIcon")
 		.chat-log-tabs
 			a.link-plain.chat-log-tab(#localTab tabindex (click)="switchTab('local')")
-				| Місцева бесіда
+				| Місцеве
 			a.link-plain.chat-log-tab(#partyTab tabindex (click)="switchTab('party')")
 				| Паті
 			a.link-plain.chat-log-tab(#whisperTab tabindex (click)="switchTab('whisper')")
-				| Особисті повідомлення
+				| Шепіт
 		.chat-log-scroll-outer()
 			.chat-log-scroll-inner(#scroll)
 				.chat-log-scroll-inner-inner(#lines)
