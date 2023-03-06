@@ -5,7 +5,7 @@
 	"contactEmail": "ffoxy2870@gmail.com",
 	"port": 8094,
 	"adminPort": 8091,
-	"host": "https://uapt.ddns.net:8090/",
+	"host": "http://localhost:8090/",
 	"local": "localhost:8090",
 	"adminLocal": "localhost:8091",
 	"secret": "gfhfdshtrdhgedryhe4t3y5uwjthr",
