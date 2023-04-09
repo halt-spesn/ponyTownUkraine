@@ -9,8 +9,8 @@ A game of ponies building a town
 * gulp `npm install -g gulp`
 * MongoDB: [download link](https://www.mongodb.com/download-center/community) and [installation instructions](https://docs.mongodb.com/manual/administration/install-community/)
 * [ImageMagick](https://imagemagick.org/script/download.php#windows) (optional, required for generating preview gifs in animation tool)
-* MongoDB and MongoDB shell links for windows: https://downloads.mongodb.com/compass/mongosh-1.8.0-x64.msi, https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-6.0.4-signed.msi
-* MongoDB link for Darwin(amd64): https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-6.0.5.tgz
+* MongoDB/MongoDB shell links for windows: https://downloads.mongodb.com/compass/mongosh-1.8.0-x64.msi, https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-6.0.4-signed.msi
+* MongoDB/MongoDB shell link for Darwin(amd64): https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-6.0.5.tgz https://downloads.mongodb.com/compass/mongosh-1.8.0-darwin-x64.zip
 ## Installation
 
 ```bash
