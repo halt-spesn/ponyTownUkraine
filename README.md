@@ -5,6 +5,7 @@ A game of ponies building a town
 ## Prerequisites
 
 * [Node.js](https://nodejs.org/download/release/v9.11.2/) (version 9)
+* Node.js installation (Linux/Darwin): unpack tar, then in terminal do export PATH=/path/to/bin:$PATH, for example export PATH=/home/user/node-v9.11.2-linux-x64/bin:$PATH
 * gulp `npm install -g gulp`
 * MongoDB: [download link](https://www.mongodb.com/download-center/community) and [installation instructions](https://docs.mongodb.com/manual/administration/install-community/)
 * [ImageMagick](https://imagemagick.org/script/download.php#windows) (optional, required for generating preview gifs in animation tool)
