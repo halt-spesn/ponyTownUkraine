@@ -11,6 +11,15 @@ exports.CREDITS = [
 ];
 exports.CONTRIBUTORS = [
     {
+        group: 'Contributors from community',
+        contributors: [
+            { name: 'HALt', links: ['@shifty.d:matrix.org'] },
+            { name: 'Ґotemo Ślimak', links: ['https://t.me/dibaraban'] },
+            { name: '𐌄𐌊𐌡і ', links: ['https://t.me/ekllyy'] },
+            { name: 'This list is not full, and will be updated', links: [''] },
+        ],
+    },
+    {
         group: 'Artists & Animators',
         contributors: [
             { name: 'Shino', links: ['https://www.deviantart.com/shinodage'] },

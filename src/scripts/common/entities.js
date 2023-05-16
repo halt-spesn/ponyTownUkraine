@@ -1365,6 +1365,12 @@ exports.placeableEntities = [
     { type: exports.window1.type, name: 'Window' },
     { type: exports.bookshelf.type, name: 'Bookshelf' },
     { type: exports.rock.type, name: 'Rock' },
+    { type: exports.pine1.type, name: 'Pine' },
+    { type: exports.crystals5.type, name: 'Crystals' },
+    { type: exports.bunny.type, name: 'Bunny' },
+    { type: exports.triggerDoor.type, name: 'Trigger House' },
+    { type: exports.triggerHouseDoor.type, name: 'Trigger House Door' },
+    { type: exports.house.type, name: 'House' }
 ];
 exports.fruits = [
     exports.apple, exports.apple2, exports.appleGreen, exports.appleGreen2, exports.orange, exports.pear, exports.banana,

@@ -1406,7 +1406,16 @@ exports.updateMainMapSeason = updateMainMapSeason;
 function createMainMap(world) {
     const mapSize = 20;
     const map = serverMap_1.createServerMap('', 0 /* None */, mapSize, mapSize, 2 /* Grass */);
-    map.flags |= 8 /* EdibleGrass */;
+    if (DEVELOPMENT) {
+        map.editableEntityLimit = 300000;
+        map.flags |= 8 /* EdibleGrass */ | 1 /* EditableWalls */ | 2 /* EditableEntities */ | 4 /* EditableTiles */;
+    }
+    else {
+        map.flags |= 8 /* EdibleGrass */;
+    }
+    if (DEVELOPMENT) {
+        map.tilesLocked = false;
+    }
     // spawns
     map.spawnArea = rect_1.rect(51, 21, 8, 8);
     map.spawns.set('harbor', rect_1.rect(5.2, 72.2, 3.4, 2.6));
@@ -2448,7 +2457,7 @@ function createMainMap(world) {
             else if (!hidden && delay < 0) {
                 const rand = Math.random();
                 if (rand < 0.1) {
-                    chat_1.sayToAll(entity, 'meow', 'meow', 1 /* System */, {});
+                    chat_1.sayToAll(entity, 'няв', 'няв', 1 /* System */, {});
                     delay = lodash_1.random(2, 4, true);
                 }
                 else if (rand < 0.5) {

@@ -98,7 +98,7 @@ function shouldNotBeCalled() {
     throw new Error('Should not be called');
 }
 function isValidMapForEditing(map, client, checkTimeout, onlyLeader) {
-    if (map.id !== 'house') {
+    if (!DEVELOPMENT && map.id !== 'house') {
         chat_1.saySystem(client, 'Can only be done inside the house');
         return false;
     }

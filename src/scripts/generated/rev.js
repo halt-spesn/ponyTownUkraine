@@ -2,14 +2,14 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.REV = {
     'images/avatars.jpg': '0f8cf8266f',
-    'images/logo-120.png': 'b051cf1915',
+    'images/logo-120.png': '7a0c0f7a38',
     'images/logo-64.png': '64a63307c9',
     'images/logo-gray.png': '7d4473f069',
-    'images/logo-large.png': 'ef5e56ccc9',
+    'images/logo-large.png': '4b742ef027',
     'images/logo-small.png': '770b141d9d',
-    'images/logo.png': 'fedfb401e4',
+    'images/logo.png': '4b742ef027',
     'images/pony.png': '541b24abea',
-    'images/pony2.png': 'f370ad056d',
+    'images/pony2.png': 'a176e755fd',
     'images/pony2a.png': 'a6292b4e18',
     'music/ambient.mp3': 'd37b620d70',
     'music/ambient.webm': '4dbe61d738',

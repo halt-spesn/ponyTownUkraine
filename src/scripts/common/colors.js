@@ -33,9 +33,9 @@ exports.WHISPER_COLOR = 0xffa1dfff;
 exports.FRIENDS_COLOR = 0x71ff7fff;
 exports.SUPPORTER1_COLOR = exports.PATREON_COLOR;
 exports.SUPPORTER2_COLOR = 0xffa32bff;
-exports.SUPPORTER3_COLOR = 0xffcf00ff;
+exports.SUPPORTER3_COLOR = 0x00ffffff;
 exports.SUPPORTER2_BANDS = [0xffdfc1ff, 0xffcd99ff, 0xff9f3bff, 0xd97e09ff];
-exports.SUPPORTER3_BANDS = [0xffffffff, 0xfffda4ff, 0xffea3bff, 0xfdbb0bff];
+exports.SUPPORTER3_BANDS = [0xffffffff, 0xa4ffff, 0x69ffff, 0x1dfcfc];
 // game
 exports.SHADOW_COLOR = color_1.withAlphaFloat(exports.BLACK, 0.3);
 exports.CLOUD_SHADOW_COLOR = color_1.withAlphaFloat(exports.BLACK, 0.2);

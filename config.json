@@ -3,11 +3,11 @@
 	"twitterLink": "https://twitter.com/PonyTownUkraine",
 	"supporterLink": "https://war.ukraine.ua/donate/",
 	"contactEmail": "ffoxy2870@gmail.com",
-	"port": 8094,
-	"adminPort": 8091,
+	"port": 8090,
+	"adminPort": 8090,
 	"host": "http://localhost:8090/",
 	"local": "localhost:8090",
-	"adminLocal": "localhost:8091",
+	"adminLocal": "localhost:8090",
 	"secret": "gfhfdshtrdhgedryhe4t3y5uwjthr",
 	"token": "sdlfgihsdor8ghor8dgdrgdegrdg",
 	"db": "mongodb://halt:4365gt132@0.0.0.0:27017/ptdb",
@@ -33,7 +33,7 @@
 	"servers": [
 		{
 			"id": "test",
-			"port": 8094,
+			"port": 8090,
 			"path": "/s00/ws",
 			"local": "localhost:8090",
 			"name": "Основний сервер",

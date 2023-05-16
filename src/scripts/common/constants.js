@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SEASON = 1 /* Summer */;
-exports.HOLIDAY = 0 /* None */;
+exports.SEASON = 8 /* Spring */;
+exports.HOLIDAY = 4 /* Easter */;
 exports.SECOND = 1000;
 exports.MINUTE = exports.SECOND * 60;
 exports.HOUR = exports.MINUTE * 60;
@@ -39,7 +39,7 @@ exports.WATER_HEIGHT = [0, -1, -2, -1];
 exports.CM_SIZE = 5;
 exports.MIN_SCALE = 1;
 exports.MAX_SCALE = 4;
-exports.SAY_MAX_LENGTH = 64;
+exports.SAY_MAX_LENGTH = 256;
 exports.PLAYER_NAME_MAX_LENGTH = 20;
 exports.PLAYER_DESC_MAX_LENGTH = 40;
 exports.ACCOUNT_NAME_MIN_LENGTH = 1;

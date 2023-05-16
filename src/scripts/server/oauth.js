@@ -8,6 +8,7 @@ const passport_facebook_1 = require("@passport-next/passport-facebook");
 const passport_github2_1 = require("passport-github2");
 const passport_vkontakte_1 = require("passport-vkontakte");
 const passport_patreon_1 = require("passport-patreon");
+const passport_discord_1 = require("passport-discord");
 const colors_1 = require("../common/colors");
 const color_1 = require("../common/color");
 const config_1 = require("./config");
@@ -48,6 +49,12 @@ const providerList = [
         color: color_1.colorToCSS(colors_1.PATREON_COLOR),
         strategy: passport_patreon_1.Strategy,
     },
+    {
+        id: 'discord',
+        name: 'Discord',
+        color: '#7289DA',
+        strategy: passport_discord_1.Strategy,
+    },
 ];
 providerList.forEach(p => p.auth = config_1.config.oauth[p.id]);
 providerList.filter(p => p.auth && p.auth.connectOnly).forEach(p => p.connectOnly = true);
@@ -62,6 +69,9 @@ function getProfileUrl(profile) {
     else if (profile.provider === 'facebook') {
         return `http://www.facebook.com/${profile.id}`;
     }
+    else if (profile.provider === 'discord') {
+        return undefined;
+    }
     else if (profile._json.attributes && profile._json.attributes.url) { // patreon
         return profile._json.attributes.url;
     }
@@ -71,7 +81,10 @@ function getProfileUrl(profile) {
 }
 exports.getProfileUrl = getProfileUrl;
 function getProfileEmails(profile) {
-    if (profile.emails && profile.emails.length) {
+    if (profile.provider === 'discord') {
+        return [profile.email];
+    }
+    else if (profile.emails && profile.emails.length) {
         return profile.emails.map(e => e.value);
     }
     else if (profile._json && profile._json.attributes && profile._json.attributes.email) { // patreon
@@ -83,10 +96,14 @@ function getProfileEmails(profile) {
 }
 exports.getProfileEmails = getProfileEmails;
 function getProfileUsername(profile) {
+    if (profile.provider === 'discord')
+        return `${profile.username}#${profile.discriminator}`;
     return profile.username || profile.displayName || getProfileNameInternal(profile.name);
 }
 exports.getProfileUsername = getProfileUsername;
 function getProfileName(profile) {
+    if (profile.provider === 'discord')
+        return `${profile.username}#${profile.discriminator}`;
     return profile.displayName || profile.username || getProfileNameInternal(profile.name);
 }
 exports.getProfileName = getProfileName;

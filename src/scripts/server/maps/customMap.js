@@ -15,7 +15,17 @@ const mapData = JSON.parse(fs.readFileSync(paths_1.pathTo('src', 'maps', 'custom
 function createCustomMap(world) {
     // size: 4 by 4 regions -> 32 by 32 tiles
     // default tiles: grass
-    const map = serverMap_1.createServerMap('custom', 0 /* None */, 4, 4, 2 /* Grass */);
+    const map = serverMap_1.createServerMap('custom', 0 /* None */, 32, 32, 2 /* Grass */);
+    if (DEVELOPMENT) {
+        map.editableEntityLimit = 300000;
+        map.flags |= 8 /* EdibleGrass */ | 1 /* EditableWalls */ | 2 /* EditableEntities */ | 4 /* EditableTiles */;
+    }
+    else {
+        map.flags |= 8 /* EdibleGrass */;
+    }
+    if (DEVELOPMENT) {
+        map.tilesLocked = false;
+    }
     // initialize tiles
     serverMap_1.deserializeMap(map, mapData);
     // place default spawn point at the center of the map
