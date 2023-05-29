@@ -94,19 +94,6 @@ Get OAuth keys for authentication platform of your choice (github, google, twitt
 }
 ```
 
-### VKontakte
-
-- Go to https://vk.com/apps?act=manage and create new app
-- Set Authorized redirect URI to `http://<your domain>/auth/vkontakte/callback` or `http://localhost:8090/auth/vkontakte/callback` for localhost server.
-- Add this to `oauth` field in your `config.json`
-
-```json
-"vkontakte": {
-  "clientID": "<your_app_id>",
-  "clientSecret": "<secure_key>"
-},
-```
-
 ### Other
 
 If you want to add other sign-in methods you need to find appropriate [passport](http://www.passportjs.org/) package and add it in `src/ts/server/oauth.ts` and add correct entry in `config.json`.
