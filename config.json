@@ -12,22 +12,7 @@
 	"token": "sdlfgihsdor8ghor8dgdrgdegrdg",
 	"db": "mongodb://halt:4365gt132@0.0.0.0:27017/ptdb",
 	"oauth": {
-		"google": {
-			"clientID": "736074748538-12p29vlv9a9gkcafjf6fqjm0gvg01ks5.apps.googleusercontent.com",
-			"clientSecret": "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"
-		},
-		"github": {
- 			"clientID": "6414e10d0472a90c1e87",
- 			"clientSecret": "e2dd731e93de3a1edb17e045cf14cc3023cc1e59"
-                },
-                "twitter": {
-                         "consumerKey": "pcD9Y7XLlsEw4baN7SXmUCDwK",
-                         "consumerSecret": "a0g5K8Dpwf9d49t8dL745BD9NE8CJS9g0gjre3NK27M4m6bYyk"
-                },
-		"discord": {
-			"clientID": "1061579572614807653",
-			"clientSecret": "hl1RvESNuDC_GSggnVSZyX9nCjx6jcyE"
-	    	}
+
 	},
 	"assetsPath": "assets-source",
 	"servers": [
